@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>docx2html</title>
+</head>
+<body>
+  <div class="container">
+        <input id="document" type="file" onchange="handleFileSelect(event)" />
+        <input id = "l_document" type = 'text' onblur="longRangeWord(value)">
+        <hr>
+        <div class="row">
+          <div class="span8" style='border:bold;border-width:2px'>
+            <pre id="output" style="white-space: pre-wrap;word-wrap: break-word;" class="well">
+            </pre>
+          </div>
+      </div>
+      </div>
+
+</body>
+<script src = "mammoth.browser.min.js"></script>
+<script src = 'uploadConvert.js'></script>
+<script src = 'longRangeConvert.js'></script>
+</html>
