@@ -1,6 +1,7 @@
 # docx2html
 > 不是一个功能性的js模块,而是一个使用mammmoth.js的踩过坑之后的示例,旨在帮助后人少踩坑  
-> 一些小建议: 在线预览office可以优先考虑微软提供的接口(这个也有一些小坑,如果我用这个方法成功了,就没有这个示例了),齐次才是使用mammoth.js 或者 sheet.js等实现    
+> 一些小建议: 在线预览office可以优先考虑微软提供的接口(这个也有一些小坑,如果我用这个方法成功了,就没有这个示例了),其次才是使用mammoth.js 或者 sheet.js等实现  
+__需要查看源码的话下载docx2html.html,longRangeConvert.js,mammoth.browser.min.js,uploadConvert.js 这几个就好,img里面是这个markdone的示例图__    
 ---  
 >注:_mammoth.js卡了我很久的地方是 传入需要转化的文件的path,官方文档给定就是一个path,但是我个人测试了挺久之后发现需要传入一个file对象或者blob对象,如果有大佬有其他看法欢迎指点本人._  
 ---  
