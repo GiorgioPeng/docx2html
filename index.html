@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="index.css"/>
+  <title>docx2html</title>
+  <script   src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body>
+  <div class="container">
+        <a class="github-button"  href="https://github.com/giorgiopeng/previewDocxAtFrontEnd" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Star giorgiopeng/previewDocxAtFrontEnd on GitHub">Star</a>
+        <input id="document" type="file" onchange="handleFileSelect(event)" />
+        <input id = "l_document" style="width:250px" type = "text" placeholder="請輸入遠程地址,會在失去焦點後轉化" onblur="remoteRangeWord(value)">
+        <hr>
+        <div class="row">
+          <div class="span8" style="border:bold;border-width:2px">
+            <pre id="output" style="white-space: pre-wrap;word-wrap: break-word;" class="well">
+            使用遠程時候警惕跨域問題
+            When using to preview the remote files, please be careful of the CORS.
+
+            如果是上傳文件預覽,直接點上傳就好;如果是遠程預覽,請在輸入框中輸入docx文件地址,失去焦點後會自動轉化
+            If you want to preview the docx file after you have uploaded the file, just uploading the file.
+            If you want to preview a remote docx file, please input the url of the docx file in the input dialog, after losing focus, the remote file can be converted.
+            </pre>
+          </div>
+      </div>
+      </div>
+
+</body>
+<script src = "mammoth.browser.min.js"></script>
+<script src = "uploadConvert.js"></script>
+<script src = "remoteConvert.js"></script>
+</html>
