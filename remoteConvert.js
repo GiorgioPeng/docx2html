@@ -1,4 +1,4 @@
-function longRangeWord(url){
+function remoteRangeWord(url){
     let xhr;
     if (window.XMLHttpRequest)
     {
